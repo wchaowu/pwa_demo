@@ -1462,7 +1462,7 @@ html {
 .touchweb_page-index2017 .hot-tit-box .hot-tit .tit-logo .logo-box {
     width: 64px;
     height: 14px;
-    background: url('../../images/index2017/index2017_sprite.png?1819751') no-repeat;
+    background: url('../images/index2017/index2017_sprite.png?1819751') no-repeat;
     background-size: 76px 86px;
     background-position: 1px -73px
 }
@@ -2292,7 +2292,7 @@ html {
     height: 16px;
     padding: 6px;
     margin-right: -6px;
-    background: url('../../images/index2017/index2017_sprite.png?1819751') no-repeat;
+    background: url('../images/index2017/index2017_sprite.png?1819751') no-repeat;
     background-size: 76px 86px;
     background-position: 6px -42px
 }
@@ -2372,7 +2372,7 @@ html {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url('../../images/index2017/index2017_sprite.png?1819751') no-repeat;
+    background: url('../images/index2017/index2017_sprite.png?1819751') no-repeat;
     background-size: 76px 86px;
     line-height: 16px;
     vertical-align: top
