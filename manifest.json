@@ -1,23 +1,28 @@
 {
   "name": "1号店",
   "short_name": "1号店",
-  "icons": [{
-    "src": "images/icons/128.png",
+  "icons": [
+    {
+      "src": "images/icons/128.png",
       "sizes": "128x128",
       "type": "image/png"
-    },  {
+    },
+    {
       "src": "images/icons/512.png",
       "sizes": "512x512",
       "type": "image/png"
-    }],
-    "scope": "/pwa_demo",
+    }
+  ],
+  "scope": "/pwa_demo",
   "start_url": "index.html",
   "display": "fullscreen",
   "background_color": "#3E4EB8",
   "theme_color": "#2F3BA2",
   "prefer_related_applications": true,
-"related_applications": [{
-"platform": "play",
-"id": "demo.shop.webview"
-}]
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "demo.shop.webview"
+    }
+  ]
 }
