@@ -18,7 +18,7 @@ self.oninstall = (e) => {
         './index.js'
       ]))
   )
-});
+};
 
 self.onfetch = (e) => {
   const fetched = fetch(e.request)
