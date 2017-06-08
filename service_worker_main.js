@@ -1,7 +1,10 @@
 const CACHE_NAME = 'cache-v1';
 // The files we want to cache
 const resourceList = [
-  'index.html'
+  'index.html',
+   'index.js',
+   'styles/homepage2017.css',
+    'styles/fonts/index.woff'
 ];
 
 self.onfetch = (e) => {
