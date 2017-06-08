@@ -10,6 +10,15 @@ Progressive Web Apps（PWA，渐进式增强 WEB 应用），并且在其主要�
 * 可安装 – 允许用户保留对他们有用的应用在主屏幕上，不需要通过应用商店。
 * 可连接性 – 通过 URL 可以轻松分享应用，不用复杂的安装即可运行。
 
+### Service Worker
+
+    *后台消息传递
+    *网络代理，转发请求，伪造响应
+    *离线缓存
+    *消息推送
+    
+    [使用 Service Workers]https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+
 ### 开发步骤
 
 1. 添加 manifest.json 文件, 生成 Android 主屏打开的网页加载页面
