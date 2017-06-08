@@ -1,10 +1,10 @@
 const CACHE_NAME = 'cache-v1';
 // The files we want to cache
-const resourceList = [
-  'index.html'
-];
+const resourceList = ['index.html','index.js', 'styles/homepage2017.css',  'styles/fonts/index.woff'];
 
 self.onfetch = (e) => {
+   const fetched = fetch(e.request)
+  const cached = caches.match(e.request)
   e.respondWith(new Response('Hello World!'))
 }
 self.oninstall = (e) => {
@@ -15,15 +15,6 @@ self.oninstall = (e) => {
       ]))
   )
 };
-
-self.onfetch = (e) => {
-  const fetched = fetch(e.request)
-  const cached = caches.match(e.request)
-
-  e.respondWith(
-    fetched.catch(_ => cached)
-  )
-}
 
 self.addEventListener('push', event => {
   event.waitUntil(
@@ -42,20 +33,9 @@ self.addEventListener('notificationclose', event => {
 });
 
 
-self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => {
-    return cache.addAll(resourceList);
-  }));
-});
-
 function addToCache(cacheName, resourceList) {
   caches.open(cacheName).then(cache => {
     return cache.addAll(resourceList);
   });
 }
 
-self.addEventListener('fetch', event => {
-  event.respondWith(caches.match(event.request).then(response => {
-    return response || fetch(event.request);
-  }));
-});
