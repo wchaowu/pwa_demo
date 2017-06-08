@@ -22,6 +22,7 @@ self.addEventListener('push', event => {
   );
 });
 
+/*
 Notification.requestPermission().then(function(result) {
   if (result === 'denied') {
     console.log('Permission wasn\'t granted. Allow a retry.');
@@ -42,7 +43,7 @@ Notification.requestPermission().then(function(result) {
   // Do something with the granted permission.
 });
 
-
+*/
 
 function addToCache(cacheName, resourceList) {
   caches.open(cacheName).then(cache => {
