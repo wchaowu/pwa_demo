@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+## Progressive Web Apps
 
-You can use the [editor on GitHub](https://github.com/wchaowu/pwa_demo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Progressive Web Apps（PWA，渐进式增强 WEB 应用），并且在其主要产品上进行了深入的实践
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* 渐进增强 – 能够让每一位用户使用，无论用户使用什么浏览器，因为它是始终以渐进增强为原则。
+*  响应式用户界面 – 适应任何环境：桌面电脑，智能手机，笔记本电脑，或者其他设备。
+* 不依赖网络连接 – 通过 Service Workers 可以在离线或者网速极差的环境下工作。
+* 类原生应用 – 有像原生应用般的交互和导航给用户原生应用般的体验，因为它是建立在 app shell model 上的。
+* 持续更新 – 受益于 Service Worker 的更新进程，应用能够始终保持更新。
+* 安全 – 通过 HTTPS 来提供服务来防止网络窥探，保证内容不被篡改。
+* 可发现 – 得益于 W3C manifests 元数据和 Service Worker 的登记，让搜索引擎能够找到 web 应用。
+* 再次访问 – 通过消息推送等特性让用户再次访问变得容易。
+* 可安装 – 允许用户保留对他们有用的应用在主屏幕上，不需要通过应用商店。
+* 可连接性 – 通过 URL 可以轻松分享应用，不用复杂的安装即可运行。
 
-### Markdown
+### 步骤
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wchaowu/pwa_demo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+1. 添加 manifest.json 文件, 生成 Android 主屏打开的网页加载页面
+2. 编写 Service Worker 脚本处理缓存, 更快读取缓存
+3. 服务端渲染, 用 App Shell 带来效果, 然后动态加载
