@@ -22,12 +22,5 @@ window.addEventListener('beforeinstallprompt', function(e) {
             .register('service_worker_main.js')
             .then((registration) => {console.log('Service Worker Registered. ', registration)})
             .catch((error) => {console.log('ServiceWorker registration failed: ', error)})
-            const version = '1.0.1';
-
-navigator.serviceWorker.register('/sw.js').then(reg => {
-    if (localStorage.getItem('sw_version') !== version) {
-        reg.update().then(() => localStorage.setItem('sw_version', version));
-    }
-});
-
+            
     }
