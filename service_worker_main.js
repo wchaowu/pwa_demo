@@ -11,8 +11,7 @@ self.oninstall = (e) => {
   e.waitUntil(
     caches.open('installation')
       .then(cache =>  cache.addAll([
-        './',     
-        './index.js'
+         'index.js'
       ]))
   )
 };
