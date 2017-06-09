@@ -221,7 +221,7 @@ function onActivate(event) {
 function onPush(event) {
     log('onPush ', event);
     sendNotify('Hi:', {
-        body: `【${new Date()}】发生了一次 Push 同步事件 ~`
+        body: `【${new Date()}】发生了一次 Push 同步事件 1号店大促0元抢购~`
     }, event);
 }
 
@@ -232,7 +232,7 @@ function onPush(event) {
 function onSync(event) {
     log('onSync', event);
     sendNotify('Hi:', {
-        body: `【${new Date()}】发生了一次 Sync 同步事件 ~`
+        body: `【${new Date()}】发生了一次 Sync 同步事件  1号店大促0元抢购 ~`
     }, event);
 }
 
