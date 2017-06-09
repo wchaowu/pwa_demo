@@ -1,4 +1,4 @@
-## 什么是Progressive Web Apps [官方文档](https://developers.google.com/web/fundamentals/getting-started/)
+## 什么是Progressive Web Apps
 
 Progressive Web Apps（PWA，渐进式增强 WEB 应用），并且在其主要产品上进行了深入的实践
 * 不依赖网络连接 – 通过 Service Workers 可以在离线或者网速极差的环境下工作。
@@ -12,12 +12,12 @@ Progressive Web Apps（PWA，渐进式增强 WEB 应用），并且在其主要�
 
 ### Service Worker
 
-    * 后台消息传递
-    * 网络代理，转发请求，伪造响应
-    * 离线缓存
-    * 消息推送
+    *后台消息传递
+    *网络代理，转发请求，伪造响应
+    *离线缓存
+    *消息推送
 
-[使用 Service Workers](https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+    [使用 Service Workers]https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 
 ### 开发步骤
 
@@ -25,19 +25,15 @@ Progressive Web Apps（PWA，渐进式增强 WEB 应用），并且在其主要�
 2. 编写 Service Worker 脚本处理缓存, 更快读取缓存
 3. 服务端渲染, 用 App Shell 带来效果, 然后动态加载
 
-### 当前demo
+###当前demo
 
 [yhd_Demo](https://wchaowu.github.io/pwa_demo/)   
-
 [manifest.json](https://wchaowu.github.io/pwa_demo/manifest.json)
-
-[service_worker_main](https://wchaowu.github.io/pwa_demo/sw.js)
 
 ![yhd_pwa](images/yhd.png)   
 ![yhd_pwa](images/yhd2.png) 
 
-=======
+
 ### 更多
 
-[pwa 站点](https://pwa.rocks/)
-
+![pwa 站点](https://pwa.rocks/)

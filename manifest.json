@@ -13,9 +13,9 @@
       "type": "image/png"
     }
   ],
-  "scope": "/pwa_demo/",
+  "scope": "/pwa_demo",
   "start_url": "index.html",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#3E4EB8",
   "theme_color": "#2F3BA2",
   "prefer_related_applications": true,

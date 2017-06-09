@@ -1289,7 +1289,7 @@ html {
     z-index: 2;
     width: 100%;
     height: 100%;
-    background: url('../images/index2017/slide_bg.png?1819751') no-repeat;
+    background: url(../../images/index2017/slide_bg.png?1819751) no-repeat;
     background-size: 100% 100%
 }
 

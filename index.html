@@ -23,13 +23,13 @@
   <!-- Add to home screen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Weather PWA">  
-  <link rel="icon" href="images/favicon-yhd.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="images/favicon-yhd.ico" type="image/x-icon" />
-  <meta name="msapplication-TileImage" content="images/icons/128.png">
-  <link rel="apple-touch-icon" href="images/icons/128.png">
-  <meta name="msapplication-TileColor" content="#2F3BA2"><script>
-  _isNotglGeoLocation = true;(function(){var ae=window.navigator.userAgent;var ai=/Android|iPod|iTouch|iPhone|iPad|BlackBerry|SymbianOS|SymbOS|Windows Phone OS|WAP|Kindle|pad|pod/i;var al=/iPod|iTouch|iPhone/i;var W=/iPad/i;var au=/Android/i;var Z=/iPod|iTouch|iPhone|iPad/i;var ak=".";var aj="deeplink",ah="guid",ay="tracker_msessionid";var at=null,i=null;var ap=["1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","J","K","M","N","P","Q","R","S","T","U","V","W","X","Y","Z"];var e={getCookie:function(a,b){var c=new RegExp(b?a+"=(?:.*?&)*?"+b+"=([^&;$]*)":a+"=([^;$]*)","i");return c.test(unescape(document.cookie))?RegExp.$1:""},setCookie:function(d,b,f){var c=f||30;var a=new Date();a.setTime(a.getTime()+c*60*1000);document.cookie=d+"="+b+";expires="+a.toGMTString()+";domain=.yhd.com;path=/;"},yhdplatform:{isandroid:function(){return e.getCookie("platform","")=="android"
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+<script>
+  _isNotglGeoLocation = true;
+(function(){var ae=window.navigator.userAgent;var ai=/Android|iPod|iTouch|iPhone|iPad|BlackBerry|SymbianOS|SymbOS|Windows Phone OS|WAP|Kindle|pad|pod/i;var al=/iPod|iTouch|iPhone/i;var W=/iPad/i;var au=/Android/i;var Z=/iPod|iTouch|iPhone|iPad/i;var ak=".";var aj="deeplink",ah="guid",ay="tracker_msessionid";var at=null,i=null;var ap=["1","2","3","4","5","6","7","8","9","A","B","C","D","E","F","G","H","J","K","M","N","P","Q","R","S","T","U","V","W","X","Y","Z"];var e={getCookie:function(a,b){var c=new RegExp(b?a+"=(?:.*?&)*?"+b+"=([^&;$]*)":a+"=([^;$]*)","i");return c.test(unescape(document.cookie))?RegExp.$1:""},setCookie:function(d,b,f){var c=f||30;var a=new Date();a.setTime(a.getTime()+c*60*1000);document.cookie=d+"="+b+";expires="+a.toGMTString()+";domain=.yhd.com;path=/;"},yhdplatform:{isandroid:function(){return e.getCookie("platform","")=="android"
 },isios:function(){return e.getCookie("platform","")=="ios"},isother:function(){return e.getCookie("platform","")!="android"&&e.getCookie("platform","")!="ios"}},isWireless2:function(){return e.getCookie("frameworkver","")!=""?!0:!1},goToNative:function(a,b){e.yhdplatform.isandroid()&&window.yhd.gotToNative(a,b),e.yhdplatform.isios()&&(window.location.href=a+"?body="+b)},cmsGoToNative:function(d){var b=d.split("?"),a=b[0],c=d.split("body=").length>1?d.split("body=")[1]:null;e.goToNative(a,c)}};var aw={};function am(a){if(!a){return true}for(var b in a){return false}return true}function ao(a){if(!a){return null}var b=a.split(ak);return b.length==2?b:null}function aJ(b){if(typeof(_globalSpmDataModelJson)!="undefined"&&_globalSpmDataModelJson){var a=_globalSpmDataModelJson[b];if(a){return a}}return b
 }function ad(a){a=ao(a);if(!a){return}at=aJ(a[0]);i=a[1]}function av(d){var a="";for(var b=0;b<d;b++){var c=Math.floor(Math.random()*32);a+=ap[c]}return a}aw.getParams=function(a){var b=aw.parseUrl(a);return b?b.params:null};aw.appendParams=function(c,g){var a=aw;if(am(g)){return c}var d=a.parseUrl(c);if(!d){return c}var f=d.params;for(var b in g){if(g.hasOwnProperty(b)&&g[b]){f[b]=g[b]}}d.params=f;return a.toCusString(d)};aw.removeParams=function(h,a){var f=aw;if(!a||a.length==0){return h}var b=f.parseUrl(h);if(!b){return h}var d=b.params;for(var g=0,c=a.length;g<c;g++){if(typeof d[a[g]]!="undefined"&&d[a[g]]!=null){delete d[a[g]]}}b.params=d;return f.toCusString(b)};aw.parseUrl=function(k){var d="";var n="";var r="";var b={};if(!k||k==""){return null}var p=k.split("#");var l=p[0];if(p.length>=2){for(var q=1,o=p.length;
 q<o;q++){d+="#"+p[q]}}var f=l.indexOf("?");var g=l.length;if(f>0){n=l.substring(0,f);r=l.substring(f+1,g)}else{n=l}if(r){var h=r.split("&");for(var q=0,o=h.length;q<o;q++){var c=h[q].indexOf("=");if(c==-1){continue}var m=h[q].substring(0,c);var a=h[q].substring(c+1);b[m]=a}}var j={loc:n,params:b,append:d};return j};aw.toCusString=function(a){var d=[];d.push(a.loc);var f=a.params;if(!am(f)){d.push("?");var c=0;for(var b in f){if(f.hasOwnProperty(b)&&f[b]){if(c){d.push("&")}d.push(b+"="+f[b]);c++}}}if(a.append){d.push(a.append)}return d.join("")};aw.appendAppParams=function(d,b){if(!d){return""}var f=aw.parseUrl(d);var a=f.params||{};if(a.body){bodyObj=JSON.parse(a.body);for(var c in b){if(b.hasOwnProperty(c)&&b[c]){bodyObj[c]=b[c]}}a.body=JSON.stringify(bodyObj);return aw.toCusString(f)}else{if(!am(b)){a.body=JSON.stringify(b);
@@ -44,7 +44,7 @@ if(az){var ar=e.getCookie(ah,"");if(!ar){ar=av(36);e.setCookie(ah,ar,10*365*24*6
 <script type="text/javascript">
 var URLPrefix = {"tuan":"//t.m.yhd.com","index":"//m.yhd.com","search":"//search.m.yhd.com","cms":"//cms.m.yhd.com","item":"//item.m.yhd.com","cart":"//cart.m.yhd.com"};
 var imagePath = "//image.yihaodianimg.com/front-homepage/mglobal/images";
-var currProvinceId = 18;
+var currProvinceId = 1;
 var pathurl = "//image.yihaodianimg.com/front-homepage";
 var websiteurl = "//m.yhd.com";
 var currVersion = 1819751;
@@ -58,7 +58,7 @@ var no3wUrl = "m.yhd.com";
 var g_hotCitys="1,上海市,1&&1000,北京市,2&&237,广州市,20&&238,深圳市,20&&37,南京市,5&&50,杭州市,6&&205,武汉市,18&&111,成都市,12&&61,重庆市,7&&41,苏州市,5&&23,天津市,3&&133,合肥市,13&&52,温州市,6&&38,无锡市,5&&51,宁波市,6&&40,常州市,5"
 ;
 var globalSearchSelectFlag = "1";
-var _globalSpmDataModelJson = {"SPM_COM":{"ADD_CART":1,"ADD_FAV":2,"DELETE":6,"TURN_PAGE":8,"SETTLEMENT":7},"SPM_DATA_TYPE":{"ADVANCED_TAG":33,"MINGPIN_CAT":32,"COMMENT_TAG":28,"SEARCH_SCENE_AD":36,"KEYWORD":25,"BASICS_TAG":34,"TRACKER_CODE":16,"SMARTBOX_ATTR":23,"CATEGORY":9,"SEARCH_TURN_PAGE":20,"TMEME":38,"LANDING":6,"SEARCH_BRAND_SHOP":35,"PROMOTION":8,"MSG_TYPE":31,"PRODUCT":5,"SEARCH_FILTER":21,"AD":12,"SHOP":26,"TUAN":11,"SMARTBOX_KW":22,"MINGPIN":17,"PROVINCE":14,"SEARCH_WORD":15,"COUPON":7,"BRAND":10,"SEARCH_SORT":19,"SMARTBOX_CATE":24},"SPM_SYSTEM_TYPE":{"PMS":4,"EDM":30,"AD":13,"CATEGORY":29,"APP":37,"SEARCH":3,"MANUAL":2,"TRY":27,"STORE":18,"AUTO":1},"SPM_AREA":{"H5_MOBIHOME_CATAGORY_CENTER":3550,"H5_MOBIHOME_QIANG":3547,"H5_GLOBAL_ICON_MORE_INNER":2732,"H5_GLOBAL_HEADER_CATEGORY":2728,"H5_MOBIHOME_HOT_TOPIC":3544,"H5_GLOBAL_ICON_GOTOCART":2453,"H5_GLOBAL_ICON_MORE_CATE":2457,"H5_GLOBAL_ICON_RIGHTBOX":2731,"H5_MOBIHOME_CATAGORY_RECOMMEND":3553,"H5_MOBIHOME_RECOMMEND":3551,"H5_GLOBAL_ICON_GOBACK":2451,"H5_GLOBAL_HEADER":2724,"H5_GLOBAL_HEADER_PROVINCE":2726,"H5_MOBIHOME_GUESS_U_LIKE":3552,"H5_MOBIHOME_PROMO_1X1":3554,"H5_HOMEPAGE_PROVINCE":3737,"H5_MOBIHOME_PROMO_1X3":3545,"H5_MOBIHOME_PROMO_1X2":3546,"H5_MOBIHOME_CHEAP":3549,"H5_GLOBAL_ICON_MORE_SEARCH":2456,"H5_GLOBAL_ICON_MORE_MY":2459,"H5_GLOBAL_ICON_MORE":2730,"H5_GLOBAL_HEADER_CART":2729,"H5_GLOBAL_HEADER_LOGO":2725,"H5_MOBIHOME_BANNER_IMAGE":3542,"H5_MOBIHOME_ICON_8S":3543,"H5_GLOBAL_HEADER_USERPOPUP":2849,"H5_HOMEPAGE_APPDOWN_NOTICE":3349,"H5_GLOBAL_ICON_GOTOHOMEPAGE":2452,"H5_GLOBAL_SEARCH":2454,"H5_GLOBAL_ICON_MORE_HOME":2458,"H5_MOBIHOME_QUAL":3548,"H5_GLOBAL_ICON_MORE_GOTOCART":2455,"H5_GLOBAL_HEADER_RIGHTBOX":2727},"H5_HOMEPAGE_2017":"5261"};
+var _globalSpmDataModelJson = {"SPM_COM":{"ADD_CART":1,"ADD_FAV":2,"DELETE":6,"TURN_PAGE":8,"SETTLEMENT":7},"SPM_DATA_TYPE":{"ADVANCED_TAG":33,"MINGPIN_CAT":32,"COMMENT_TAG":28,"SEARCH_SCENE_AD":36,"KEYWORD":25,"BASICS_TAG":34,"TRACKER_CODE":16,"SMARTBOX_ATTR":23,"CATEGORY":9,"SEARCH_TURN_PAGE":20,"TMEME":38,"LANDING":6,"SEARCH_BRAND_SHOP":35,"PROMOTION":8,"MSG_TYPE":31,"PRODUCT":5,"SEARCH_FILTER":21,"AD":12,"SHOP":26,"TUAN":11,"SMARTBOX_KW":22,"MINGPIN":17,"PROVINCE":14,"SEARCH_WORD":15,"COUPON":7,"BRAND":10,"SEARCH_SORT":19,"SMARTBOX_CATE":24},"SPM_SYSTEM_TYPE":{"PMS":4,"EDM":30,"AD":13,"CATEGORY":29,"APP":37,"SEARCH":3,"MANUAL":2,"TRY":27,"STORE":18,"AUTO":1},"SPM_AREA":{"H5_MOBIHOME_CATAGORY_CENTER":3550,"H5_MOBIHOME_QIANG":3547,"H5_GLOBAL_HEADER_CATEGORY":2728,"H5_GLOBAL_ICON_MORE_INNER":2732,"H5_MOBIHOME_HOT_TOPIC":3544,"H5_GLOBAL_ICON_GOTOCART":2453,"H5_GLOBAL_ICON_MORE_CATE":2457,"H5_GLOBAL_ICON_RIGHTBOX":2731,"H5_MOBIHOME_CATAGORY_RECOMMEND":3553,"H5_MOBIHOME_RECOMMEND":3551,"H5_GLOBAL_ICON_GOBACK":2451,"H5_GLOBAL_HEADER":2724,"H5_GLOBAL_HEADER_PROVINCE":2726,"H5_MOBIHOME_GUESS_U_LIKE":3552,"H5_MOBIHOME_PROMO_1X1":3554,"H5_HOMEPAGE_PROVINCE":3737,"H5_MOBIHOME_PROMO_1X3":3545,"H5_MOBIHOME_PROMO_1X2":3546,"H5_MOBIHOME_CHEAP":3549,"H5_GLOBAL_ICON_MORE_SEARCH":2456,"H5_GLOBAL_ICON_MORE_MY":2459,"H5_GLOBAL_HEADER_LOGO":2725,"H5_GLOBAL_HEADER_CART":2729,"H5_GLOBAL_ICON_MORE":2730,"H5_MOBIHOME_BANNER_IMAGE":3542,"H5_MOBIHOME_ICON_8S":3543,"H5_GLOBAL_HEADER_USERPOPUP":2849,"H5_HOMEPAGE_APPDOWN_NOTICE":3349,"H5_GLOBAL_ICON_GOTOHOMEPAGE":2452,"H5_GLOBAL_SEARCH":2454,"H5_GLOBAL_ICON_MORE_HOME":2458,"H5_MOBIHOME_QUAL":3548,"H5_GLOBAL_ICON_MORE_GOTOCART":2455,"H5_GLOBAL_HEADER_RIGHTBOX":2727},"H5_HOMEPAGE_2017":"5261"};
 var _globalABTestExpDataJson = {};
 var _globalABTestBucketWholeJson = {"pc":{"bxExp":"1-1000"},"h5":{"bxExp":"1-1000"}};
 var _globalABTestExpDetailJson = {};
@@ -251,32 +251,52 @@ window.__redPacketFalling=true;
 <div class="slide_shadow">
 <img src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="">
 </div>
-<div class="slide_bg" ></div>
-<div id="slider" class="swipeSlide 7" id="H5_MOBIHOME_BANNER_IMAGE">
+<div class="slide_bg" style="background-image:url('//d7.yihaodianimg.com/N11/M09/ED/D4/ChEwoFk4tWKAddZEAADQqCU1Z4s40800.jpg')" ></div>
+<div id="slider" class="swipeSlide 11" id="H5_MOBIHOME_BANNER_IMAGE">
 <ul>
 <li flag="0" data-advId="21853">
 <a href="javascript:;" data-advId="21853" data-advCode="APPSY_LBGG_LBXLK_MR" data-ajax="2" data-nsf="1" data-width="1026" data-height="496">
 <img alt="" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" >
 </a>
 </li>
+<li flag="1" data-advId="21845">
+<a href="//cms.m.yhd.com/sale/uQQPUhUGjnj" >
+<img alt="618年中购物节6.5-6.15" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d6.yihaodianimg.com/N11/M08/EB/A2/ChEwolk31HeAD_Q6AAKPczXWaQI45100.jpg" >
+</a>
+</li>
+<li flag="2" data-advId="21846">
+<a href="//cms.m.yhd.com/sale/rloqMfmLfxr" >
+<img alt="进口分会场6.5-6.10(618预热)" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d6.yihaodianimg.com/N11/M0B/DE/B6/ChEwoVkxH-WAHVy_AAGXfmzmEnw95800.jpg" >
+</a>
+</li>
 <li flag="3" data-advId="21847">
-<a href="//cms.m.yhd.com/sale/WjcciyuIusC" >
-<img alt="商城618 第一波 6.5-15" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d9.yihaodianimg.com/N09/M08/16/E8/ChEi11kxI2uAR5FMAAG2Rx0ILIQ95800.jpg" >
+<a href="//cms.m.yhd.com/sale/iGzPUhAhjTS" >
+<img alt="大牌年终奖 6.5-6.10" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d9.yihaodianimg.com/N11/M04/E5/D9/ChEwoFk0sMyABjFaAAGUNW-fqf032900.jpg" >
 </a>
 </li>
 <li flag="4" data-advId="21848">
-<a href="//m.yhd.com/store/m-2264-1.html" >
-<img alt="惠州酷友网络科技有限公司(TCL)" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d6.yihaodianimg.com/N11/M07/E3/CA/ChEwoVk1AJqAAdr8AAC33ZsTM0Q21200.jpg" >
+<a href="//cms.m.yhd.com/sale/NJXwpRNwTmJ" >
+<img alt="6.5-6.10厨卫" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d9.yihaodianimg.com/N11/M09/EA/A5/ChEwoFk3qbuAASe8AAHlIqgYU1o02100.jpg" >
 </a>
 </li>
 <li flag="5" data-advId="21849">
-<a href="//t.m.yhd.com/detailBrand/43250" >
-<img alt="小熊" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d7.yihaodianimg.com/N08/M0A/45/72/ChEi1Vk3aU6AeCL7AAHMXDZjxYI36200.jpg" >
+<a href="//cms.m.yhd.com/sale/TMYqMttkfIS" >
+<img alt="6.7-6.8 宝宝美食汇" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d6.yihaodianimg.com/N11/M03/E7/DC/ChEwoFk2DO-AN0vCAAKmeJ6bTuk35300.jpg" >
 </a>
 </li>
 <li flag="5" data-advId="21854">
 <a href="javascript:;" data-advId="21854" data-advCode="APPSY_LBGG_LBJZH_MR" data-ajax="2" data-nsf="1" data-width="1026" data-height="496">
 <img alt="" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" >
+</a>
+</li>
+<li flag="6" data-advId="21850">
+<a href="//cms.m.yhd.com/sale/pSMqMtCCqMS" >
+<img alt="618CE商城分会场" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d9.yihaodianimg.com/N08/M0A/40/02/ChEi1Vkxi9mAdZqIAAFV_xCn-Vg60300.jpg" >
+</a>
+</li>
+<li flag="7" data-advId="21851">
+<a href="//cms.m.yhd.com/sale/TYSwpRTSTSS" >
+<img alt="【618电脑】1-15号" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" data-src="//d8.yihaodianimg.com/N11/M0A/EB/A4/ChEwoVk4uquANYItAAF3PORAOT074500.jpg" >
 </a>
 </li>
 <li flag="10" data-advId="25301">
@@ -292,20 +312,24 @@ window.__redPacketFalling=true;
 </ul>
 <div class="dot">
 <span data-advId="21853"></span>
+<span data-advId="21845"></span>
+<span data-advId="21846"></span>
 <span data-advId="21847"></span>
 <span data-advId="21848"></span>
 <span data-advId="21849"></span>
 <span data-advId="21854"></span>
+<span data-advId="21850"></span>
+<span data-advId="21851"></span>
 <span data-advId="25301"></span>
 <span data-advId="25302"></span>
 </div>
 </div>
 </div>
-<div class="touchweb_components-headerMenu " data-tpa="H5_MOBIHOME_ICON_8S">
+<div class="touchweb_components-headerMenu " style="background-image:url('//d6.yihaodianimg.com/N11/M00/EB/9A/ChEwoVk4t-yACdA3AACzGNx1X-029800.jpg')" data-tpa="H5_MOBIHOME_ICON_8S">
 <a href="//t.m.yhd.com/" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="1号团" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N09/M07/93/56/ChEi11j4WceATlBvAAAd6UHZyzU96300.png" >
+<img alt="1号团" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N09/M03/21/84/ChEi11k3semAW-8hAAANX3ZJVII50500.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">1号团</span>
@@ -313,7 +337,7 @@ window.__redPacketFalling=true;
 <a href="//m.yhd.com/charge/showH5VirtualChargeHome.action" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="充值中心" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N09/M00/93/58/ChEi11j4WiuAYp1jAAAXvgWKlSU17000.png" >
+<img alt="充值中心" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N09/M08/21/85/ChEi11k3smyAYfgxAAAPnSgSnIQ95100.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">充值中心</span>
@@ -321,7 +345,7 @@ window.__redPacketFalling=true;
 <a href="//cms.m.yhd.com/sale/DDBXbOBDBDO" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="爱上新" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N10/M06/22/4F/ChEi21kaxKCABH0nAAAlR6F-mkA64500.png" >
+<img alt="爱上新" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N09/M06/21/A6/ChEi2Fk3suuAPekHAAAPV_xHDy486900.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">爱上新</span>
@@ -329,16 +353,15 @@ window.__redPacketFalling=true;
 <a href="//cms.m.yhd.com/sale/qAxqCCfMqtr" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="活色生鲜" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N08/M06/E6/C2/ChEi1lj4WvyAZg5GAAAhzRkCMIg77500.png" >
+<img alt="活色生鲜" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N10/M03/48/BB/ChEi3Fk32pOALXw0AAAOSxT6ngE43900.png" >
 </div>
-<span class="tips">减68</span>
 </div>
 <span class="title" style="color:#757575">活色生鲜</span>
 </a>
 <a href="//cms.m.yhd.com/sale/iSGcgrgiIGM" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="进口馆" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N08/M05/E7/6E/ChEi1Fj4hb-AKVQEAAAes3bpcqk26400.png" >
+<img alt="进口馆" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N11/M02/EA/C1/ChEwoFk3tlWABB0rAAAM8CRPs7k50200.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">进口馆</span>
@@ -346,7 +369,7 @@ window.__redPacketFalling=true;
 <a href="//s.m.yhd.com" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="品牌特卖" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N11/M08/80/6B/ChEwoFj4XGiAfvj5AAAiCiXQ9Nc27700.png" >
+<img alt="品牌特卖" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N11/M03/E8/73/ChEwoVk3tsmAamnvAAAO_TDDPfA48500.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">品牌特卖</span>
@@ -354,7 +377,7 @@ window.__redPacketFalling=true;
 <a href="//cms.m.yhd.com/sale/WjcciyuIusC" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="商城优选" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N08/M0B/E6/CD/ChEi1lj4XN-AHERTAAAbfR7TGRI35700.png" >
+<img alt="商城优选" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N09/M05/21/AF/ChEi2Fk3t26AEEMpAAAPM2OrPyw72200.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">商城优选</span>
@@ -362,7 +385,7 @@ window.__redPacketFalling=true;
 <a href="//cms.m.yhd.com/sale/iMYciHyruiM" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="1号好货" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N08/M02/E6/9D/ChEi1Fj4XceAO0YMAAAordnnPCU32900.png" >
+<img alt="1号好货" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N08/M01/46/52/ChEi1Fk32NeARE5CAAAh2L2s3uM97300.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">1号好货</span>
@@ -370,7 +393,7 @@ window.__redPacketFalling=true;
 <a href="//m.yhd.com/vip" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="领金币" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N09/M06/93/80/ChEi2Fj4X1OADnsUAAAolsynVZc04200.png" >
+<img alt="领金币" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N11/M02/EB/38/ChEwoFk32WCAaU2lAAAOaBADplE38600.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">领金币</span>
@@ -378,11 +401,15 @@ window.__redPacketFalling=true;
 <a href="//m.yhd.com/myH5/h5Index/index.do" class="item" >
 <div class="icon_box">
 <div class="pic">
-<img alt="我的1号店" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N11/M03/7D/FE/ChEwoVj4XqWAAWyfAAAZ8au7VRM68400.png" >
+<img alt="我的1号店" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N11/M06/E8/EE/ChEwoVk32eaAJ2NPAAAN1otIo5w07100.png" >
 </div>
 </div>
 <span class="title" style="color:#757575">我的1号店</span>
 </a>
+</div>
+<div class="floor_pic_1" data-tpa="H5_MOBIHOME_PROMO_1X1">
+<a href="//cms.m.yhd.com/sale/LPZwpYNnTDO" data-tc="ad.0.0.21871-45433982.1" data-ref="21871_45433982_1">
+<img alt="6.8庄臣" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N11/M06/E8/D2/ChEwoVk304aAYkTIAAHLSGJUEV833300.jpg" > </a>
 </div>
 <div class="rush-buy" id="h5qianggou" data-tpa="H5_MOBIHOME_QIANG">
 <div class="rush-head">
@@ -391,7 +418,7 @@ window.__redPacketFalling=true;
 1号抢购
 </h3>
 <div class="last-wrap">
-<div class="last-box" data-startDate="2017-06-09-07-00-00" data-endDate="2017-06-09-14-00-00">
+<div class="last-box" data-startDate="2017-06-08-14-00-00" data-endDate="2017-06-08-21-00-00">
 <span class="last-tit">倒计时</span>
 <span class="last-time" >
 <em class="hour">23</em><em class="split1">:</em>
@@ -408,172 +435,298 @@ window.__redPacketFalling=true;
 </a>
 </div>
 <div class="rush-box">
+<div class="today-choose">
+<a class="today-link" target="_blank" href="//qianggou.m.yhd.com/1-4630644" title="雷达杀虫剂">
+<div class="head-box">
+<h3 class="today-tit" style="color:#42596b">今日甄选</h3>
+<div class="today-price" style="color:#42596b" data-grouponId="4630644">
+<span>&yen;</span>20.9
+</div>
+</div>
+<div class="pic">
+<img class="lazyload" original="//d8.yihaodianimg.com/N09/M07/21/29/ChEi2Fk3jW-AVB1CAADhHQAr8qg67000_242x256.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="杀蟑螂蚂蚁苍蝇灭蚊驱蚊进口配方无味少刺激">
+</div>
+</a>
+</div>
 <div class="product-list" id="qianggou">
-<div class="product-item" data-grouponId="4621313">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4621313" target="_blank" title="品赞 智利奇异果 绿心猕猴桃10个">
+<div class="product-item" data-grouponId="4647012">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4647012" target="_blank" title="Heinz/亨氏 铁锌钙营养奶米粉电商专供装 325g/盒">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d8.yihaodianimg.com/N09/M0A/27/60/ChEi2FjLTKCAJ3dgAAFXynXdNZU37200_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="源产地直供，口感酸甜可口，富含维C。">
+<img class="lazyload" original="//d7.yihaodianimg.com/N10/M05/87/FC/ChEi21X4KBqAL80DAAQUkeRQ_ZI03401_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="宝宝之选 辅食 婴儿米粉 超值电商专供装 经济划算">
 </div>
 </div>
-<h3 class="now-price">&yen;25</h3>
+<h3 class="now-price">&yen;18.2</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;78</span>
+<span class="old-price">&yen;41.5</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4632537">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4632537" target="_blank" title="YUANGU YZ-02A榨汁机电动果汁杯充电式榨汁杯便携迷你多功能家用">
+<div class="product-item" data-grouponId="4643631">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4643631" target="_blank" title="【领券更优惠】雅培 小安素 香草口味 900g/罐（1岁以上）原装进口">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d9.yihaodianimg.com/N11/M03/E6/B5/ChEwolk1ICSAHmJVAADuwevjGz431500_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="【磁感应开关更安全】随时为你榨出新鲜的果汁！">
+<img class="lazyload" original="//d7.yihaodianimg.com/N10/M0A/D9/75/ChEi2lYfYJqAShNmAAPN7O7rKC863501_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="雅培 小安素 香草口味 900g/罐（1岁以上）原装进口">
 </div>
 </div>
-<h3 class="now-price">&yen;69</h3>
+<h3 class="now-price">&yen;154.9</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;99</span>
+<span class="old-price">&yen;249</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4611625">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4611625" target="_blank" title="楼兰蜜语 【第二份半价】脆美人35g*5袋 脆冬枣马牙枣红枣新疆特产新鲜">
+<div class="product-item" data-grouponId="4627400">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4627400" target="_blank" title="Safeguard 舒肤佳 香皂 芦荟呵护型 115g*4 家庭装">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d8.yihaodianimg.com/N09/M03/7D/61/ChEi2VkdBxeAcjOpAAY9Dmw2qbA10300_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="口感香脆，枣型漂亮如美人，机器去核，食用方便">
+<img class="lazyload" original="//d9.yihaodianimg.com/N08/M06/5A/0F/ChEi1Ve2hYSAb_IaAAZgErXG8xk87901_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="Safeguard 舒肤佳 香皂 芦荟呵护型 115g*4 家庭装">
 </div>
 </div>
-<h3 class="now-price">&yen;23.9</h3>
+<h3 class="now-price">&yen;11.9</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;47</span>
+<span class="old-price">&yen;18.9</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4606185">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4606185" target="_blank" title="乐屿 野生干海带300g 袋装含碘丰富 无沙 出口品质">
+<div class="product-item" data-grouponId="4631476">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4631476" target="_blank" title="【618年终大促】日清 葵花籽油 5L/桶">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d7.yihaodianimg.com/N06/M07/52/05/CgQIzVfWnjCANy6zAAGn3_E38r821200_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="海洋蔬菜，营养美味，叶子厚度均匀，口感嫩滑">
+<img class="lazyload" original="//d9.yihaodianimg.com/N10/M00/23/9B/ChEi21h8WBuAU3ofAAJ3-zKT0rc76201_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="日清 葵花籽油 5L/桶 葵籽油 非转基因">
 </div>
 </div>
-<h3 class="now-price">&yen;19.8</h3>
+<h3 class="now-price">&yen;57.9</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;69</span>
+<span class="old-price">&yen;95</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4624175">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4624175" target="_blank" title="天生就会跑 文轩网">
+<div class="product-item" data-grouponId="4621036">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4621036" target="_blank" title="Double A 复印纸 A4 70G 500张/包 5包一箱 整箱出售">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d10.yihaodianimg.com/N09/M03/1A/E0/ChEi2VY48cCAcnNiAACGGPO1kEA73900_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="(美)凯利.麦格尼格尔 新华书店正版畅销图书籍 文">
+<img class="lazyload" original="//d6.yihaodianimg.com/N03/M0B/36/28/CgQCtVOFTTqAa678AAHyza6dd5k20001_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="泰国产、不卡纸、防静电、平滑、手感顺滑、打印顺畅、均匀高百度">
 </div>
 </div>
-<h3 class="now-price">&yen;24.8</h3>
+<h3 class="now-price">&yen;99</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;30.4</span>
+<span class="old-price">&yen;114</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4612707">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4612707" target="_blank" title="摩曼一拖四 多功能果冻数据线">
+<div class="product-item" data-grouponId="4620185">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4620185" target="_blank" title="【买2送牛肉丸或牛排】科尔沁 澳洲牛柳牛肉片组合150g*5袋 方便菜">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d9.yihaodianimg.com/N10/M00/BE/E7/ChEi21hYyIuAN1CnAAI95YDHOwc75601_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="原价19.9元，限时限量抢，仅限今日，手机充电线 移动电源充电线 快速充电 方便携带 ">
+<img class="lazyload" original="//d7.yihaodianimg.com/N11/M06/DC/62/ChEwoVkv0vSAJfuAAAFQt79y48k22400_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="免洗免切免腌制，3分钟速食菜，在家也能当大厨">
 </div>
 </div>
-<h3 class="now-price">&yen;9.9</h3>
+<h3 class="now-price">&yen;49.9</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;50.7</span>
+<span class="old-price">&yen;109</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4613620">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4613620" target="_blank" title="索尔诺鞋柜60*30*108cm大容量单排6层鞋柜06C">
+<div class="product-item" data-grouponId="4646139">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4646139" target="_blank" title="【法国进口】Evian依云 天然矿泉水 500ml*6 X 2">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d7.yihaodianimg.com/N11/M08/DA/68/ChEwoVkumSeADXFBAAGLj_eiROo09200_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="轻松收纳18双鞋子 卷帘设计 防尘防潮 ">
+<img class="lazyload" original="//d7.yihaodianimg.com/N09/M01/79/DA/ChEi2Fjt6baABSOHAADRnBwrVG406600_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="【法国进口】Evian依云 天然矿泉水 500ml*6 X 2">
 </div>
 </div>
-<h3 class="now-price">&yen;28.8</h3>
+<h3 class="now-price">&yen;49.9</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;49</span>
+<span class="old-price">&yen;123.8</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4631816">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4631816" target="_blank" title="菲洛施浓缩洗碗液 750ml">
+<div class="product-item" data-grouponId="4627853">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4627853" target="_blank" title="康师傅 冰红茶250ml*24盒/箱 整箱">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d7.yihaodianimg.com/N09/M09/63/06/ChEi2Fjkog2AQJ2KAABgU-OB4RY25500_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="中性PH，温和清洁，双手不紧绷；天然柠檬提取物，易冲洗，无残留，具有很好分解油污能力">
+<img class="lazyload" original="//d9.yihaodianimg.com/N08/M02/37/45/ChEi1VegZOeAWWqnAAIREZxy9x466801_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="康师傅 冰红茶 优质原料，柠檬口味，精致包装，品质保证">
 </div>
 </div>
 <h3 class="now-price">&yen;19.9</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;69</span>
+<span class="old-price">&yen;35</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4633063">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4633063" target="_blank" title="扇牌 洗衣皂 150g*5">
+<div class="product-item" data-grouponId="4611976">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4611976" target="_blank" title="【买二赠一】有机黄小米450g*2袋 精品营养粗粮小米 ">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d6.yihaodianimg.com/N03/M05/84/7C/CgQCs1MoFXeAXs2OAAGmlfHn8o058601_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="无磷配方，减少因残留引起的皮肤不适，柔顺舒适 扇牌 洗衣皂">
+<img class="lazyload" original="//d9.yihaodianimg.com/N08/M07/3C/42/ChEi1lkuYZqAQlLoAAHN7t0kznM58100_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="回归初谷味 2016新米 当月现磨 天然基地种植 ">
+</div>
+</div>
+<h3 class="now-price">&yen;12.9</h3>
+<div class="reference">
+<span class="reference-box">参考价</span>
+<span class="old-price">&yen;16.9</span>
+</div>
+</a>
+</div>
+<div class="product-item" data-grouponId="4624422">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4624422" target="_blank" title="雀巢咖啡(Nescafé)金牌丝滑拿铁20gX20条">
+<div class="pic-wrap">
+<div class="pic">
+<img class="lazyload" original="//d9.yihaodianimg.com/N09/M01/5B/58/ChEi2FjfUTqAeEL0AALpePTYi1E07701_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="雀巢馆藏系列 丝滑拿铁 口味醇正 每一口纵享醇香">
+</div>
+</div>
+<h3 class="now-price">&yen;29.9</h3>
+<div class="reference">
+<span class="reference-box">参考价</span>
+<span class="old-price">&yen;45.9</span>
+</div>
+</a>
+</div>
+<div class="product-item" data-grouponId="4633579">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4633579" target="_blank" title="Midea 美的 电风扇 家用台式转页扇 KYT25-17D 白色">
+<div class="pic-wrap">
+<div class="pic">
+<img class="lazyload" original="//d7.yihaodianimg.com/N11/M04/E5/96/ChEwoVk2D_aANdJ4AACyfzuhp0874600_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="【1号店自营 清凉特惠】17年新款 3档风速 2小时定时 小巧玲珑 节省空间 ">
+</div>
+</div>
+<h3 class="now-price">&yen;99</h3>
+<div class="reference">
+<span class="reference-box">参考价</span>
+<span class="old-price">&yen;199</span>
+</div>
+</a>
+</div>
+<div class="product-item" data-grouponId="4624440">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4624440" target="_blank" title="麦斯威尔 原味速溶咖啡100条（1300克）">
+<div class="pic-wrap">
+<div class="pic">
+<img class="lazyload" original="//d9.yihaodianimg.com/N08/M06/C8/9A/ChEi1ldU7q-AEXz2AAOpNPaCBXI48201_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="1号店咖啡品质选择，你身边的好伙伴，便宜，实惠，看得到
+">
+</div>
+</div>
+<h3 class="now-price">&yen;74.9</h3>
+<div class="reference">
+<span class="reference-box">参考价</span>
+<span class="old-price">&yen;112</span>
+</div>
+</a>
+</div>
+<div class="product-item" data-grouponId="4630789">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4630789" target="_blank" title="洁云福瑞国色3层130抽-6包">
+<div class="pic-wrap">
+<div class="pic">
+<img class="lazyload" original="//d6.yihaodianimg.com/N04/M05/1F/AE/ChEiBlfqC9KAKnOmAAQJyxpKK_s42801_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="包装华丽，纸质更优，软抽新体验，福瑞国色，全新升级，更优质的体验。">
 </div>
 </div>
 <h3 class="now-price">&yen;9.9</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;14.9</span>
+<span class="old-price">&yen;39.9</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4630638">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4630638" target="_blank" title="Heinz 亨氏 香橙谷物磨牙棒 64g/盒">
+<div class="product-item" data-grouponId="4574052">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4574052" target="_blank" title="Stiger/斯泰克 G37智能商务蓝牙耳机">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d9.yihaodianimg.com/N08/M0B/F0/9A/ChEi1VgEM3qAO8JNAAVE5U4M8OE19901_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="Heinz 亨氏 香橙谷物磨牙棒 64g/盒">
+<img class="lazyload" original="//d10.yihaodianimg.com/N09/M0B/E7/4B/ChEi2FbVTiiAYSQbAAHteKieDPM61201_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="蓝牙4.1中文智能语音声控、来电号码语音播报。适用于三星苹果iphone魅族小米华为等手机">
 </div>
 </div>
-<h3 class="now-price">&yen;15.8</h3>
+<h3 class="now-price">&yen;59</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;22.5</span>
+<span class="old-price">&yen;129</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4633641">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4633641" target="_blank" title="Midea 美的 电风扇 机械 塔扇 FZ10-15BW 白色">
+<div class="product-item" data-grouponId="4632502">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4632502" target="_blank" title="新加坡爱家乐18寸无叶风扇Z18家用遥控电风扇智能定时落地扇经典客厅风扇">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d7.yihaodianimg.com/N10/M03/DD/F4/ChEi2lj5myGAIAv4AAAjUmv-UqE66300_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="【1号店自营 正品保证】美的电风扇 健康负离子 清新空气 3档风速可调 2小时定时 60度水平摆风 风力舒爽柔">
+<img class="lazyload" original="//d7.yihaodianimg.com/N11/M07/E6/B3/ChEwolk1HU2ABV5nAACLdSPg6-Y43200_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="新加坡品牌一年质保自动转头清新自然风大风扇">
 </div>
 </div>
-<h3 class="now-price">&yen;239</h3>
+<h3 class="now-price">&yen;599</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;299</span>
+<span class="old-price">&yen;969</span>
 </div>
 </a>
 </div>
-<div class="product-item" data-grouponId="4622713">
-<a class="product-box" href="//qianggou.m.yhd.com/1-4622713" target="_blank" title="拉菲 尚品波尔多法定产区红葡萄酒750ml/瓶 法国原瓶进口">
+<div class="product-item" data-grouponId="4641483">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4641483" target="_blank" title="洋口港 海蜇头 2KG">
 <div class="pic-wrap">
 <div class="pic">
-<img class="lazyload" original="//d7.yihaodianimg.com/N10/M03/F5/7C/ChEi21kAP3GAIvLUAACrOMPjD2o65700_180x180.png" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="拉菲 尚品波尔多法定产区红葡萄酒， 法国原瓶进口">
+<img class="lazyload" original="//d7.yihaodianimg.com/N10/M0A/21/38/ChEi2liG8geAUJP_AAIDCGWich002201_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="洋口港 海蜇头 2KG">
 </div>
 </div>
-<h3 class="now-price">&yen;89</h3>
+<h3 class="now-price">&yen;45</h3>
 <div class="reference">
 <span class="reference-box">参考价</span>
-<span class="old-price">&yen;208</span>
+<span class="old-price">&yen;102.9</span>
+</div>
+</a>
+</div>
+<div class="product-item" data-grouponId="4622087">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4622087" target="_blank" title="生和堂 吸吸龟苓膏 8袋装 253g*8">
+<div class="pic-wrap">
+<div class="pic">
+<img class="lazyload" original="//d8.yihaodianimg.com/N09/M07/7D/54/ChEi11jvLXWAXziqAACeZgGr2Kk96800_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="生和堂 吸吸龟苓膏 8袋装 253g*8 吸吸龟苓膏 8袋装 253g*8 ">
+</div>
+</div>
+<h3 class="now-price">&yen;29.9</h3>
+<div class="reference">
+<span class="reference-box">参考价</span>
+<span class="old-price">&yen;49.8</span>
+</div>
+</a>
+</div>
+<div class="product-item" data-grouponId="4612143">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4612143" target="_blank" title="蒙牛 纯牛奶（电商特供版）250ml*16包">
+<div class="pic-wrap">
+<div class="pic">
+<img class="lazyload" original="//d7.yihaodianimg.com/N10/M07/73/BC/ChEi21chqYmAcagvAATjLrZ6ILs66901_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="蒙牛 纯牛奶 （电商特供版） 250ml*16包">
+</div>
+</div>
+<h3 class="now-price">&yen;35.1</h3>
+<div class="reference">
+<span class="reference-box">参考价</span>
+<span class="old-price">&yen;56</span>
+</div>
+</a>
+</div>
+<div class="product-item" data-grouponId="4624041">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4624041" target="_blank" title="bananaumbrella 蕉下拂梦三折防晒太阳遮阳伞">
+<div class="pic-wrap">
+<div class="pic">
+<img class="lazyload" original="//d8.yihaodianimg.com/N09/M07/16/A8/ChEi2FkxEWOAQ6HrAAG318rxr3002100_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="新款">
+</div>
+</div>
+<h3 class="now-price">&yen;128</h3>
+<div class="reference">
+<span class="reference-box">参考价</span>
+<span class="old-price">&yen;699</span>
+</div>
+</a>
+</div>
+<div class="product-item" data-grouponId="4627995">
+<a class="product-box" href="//qianggou.m.yhd.com/1-4627995" target="_blank" title="Colgate 高露洁 纤柔备长炭牙刷 4支装*2+小牙膏40g*2只">
+<div class="pic-wrap">
+<div class="pic">
+<img class="lazyload" original="//d7.yihaodianimg.com/N10/M0A/FD/7E/ChEi21gF5cKAWwb5AAS3IMSWJx005001_180x180.jpg" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" alt="超细软毛，专为细微深入温和清洁而设计；刷毛含备长炭，可减少导致细菌滋生的湿气（40g小牙膏随机发送）">
+</div>
+</div>
+<h3 class="now-price">&yen;25.9</h3>
+<div class="reference">
+<span class="reference-box">参考价</span>
+<span class="old-price">&yen;69</span>
 </div>
 </a>
 </div>
@@ -596,12 +749,12 @@ window.__redPacketFalling=true;
 品牌·1号团
 </h3>
 <div class="sub-tit" style="color:#b1483f;border-color:#b1483f;">
-纸品爆款抢购
+好零食0.1元抢
 </div>
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="品牌·1号团" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N08/M05/45/9D/ChEi1Fk3Y6CAdFqnAACBxVdL-j447600.jpg" > </div>
+<img alt="品牌·1号团" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N08/M08/48/0F/ChEi1Fk4tRCAXbn6AAB73VhNKhY52300.jpg" > </div>
 </a>
 <a href="//cms.m.yhd.com/sale/gnjPGahGjsj" class="column-pic pic-half">
 <div class="pic-head">
@@ -610,12 +763,12 @@ window.__redPacketFalling=true;
 量贩团
 </h3>
 <div class="sub-tit" style="color:#b1483f;border-color:#b1483f;">
-前54名免单
+前168名免单
 </div>
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="量贩团" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N11/M0A/EA/F8/ChEwoFk3yoeAEzsPAAClQY97WRo06900.jpg" > </div>
+<img alt="量贩团" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N09/M03/1C/91/ChEi11k1EFuAfy_CAABOhJde2LY75400.jpg" > </div>
 </a>
 </div>
 <div class="con-column con-column-2">
@@ -626,7 +779,7 @@ window.__redPacketFalling=true;
 品牌特卖
 </h3>
 <div class="sub-tit" style="color:#b1483f;border-color:#b1483f;">
-COACH 1 折起
+大牌奢品钜惠
 </div>
 </div>
 </div>
@@ -640,12 +793,12 @@ COACH 1 折起
 爱上新
 </h3>
 <div class="sub-tit" style="color:#b1483f;border-color:#b1483f;">
-宝宝抽纸4折起
+婴儿抽纸4折起
 </div>
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="爱上新" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N08/M08/48/C3/ChEi1Vk5AYOASUfZAACpenO3vHU99100.jpg" > </div>
+<img alt="爱上新" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N09/M02/22/AD/ChEi2Fk39EeAfY97AACpenO3vHU87800.jpg" > </div>
 </a>
 </div>
 <div class="con-column con-column-2">
@@ -733,19 +886,19 @@ COACH 1 折起
 <div class="pic-wrap">
 <img alt="耍大牌" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N10/M06/4A/67/ChEi3Fk4pXSAbFlGAABCqAsPLS011900.png" > </div>
 </a>
-<a href="//cms.m.yhd.com/sale/amUPUjUjjFm" class="column-pic pic-small">
+<a href="//m.yhd.com/store/m-201949-1.html" class="column-pic pic-small">
 <div class="pic-head">
 <div class="head-con">
 <h3 class="main-tit">
-轻奢闪购专场
+山姆会员商店
 </h3>
 <div class="sub-tit" style="color:#e09e0f;border-color:#e09e0f;">
-低至1折起
+蔡司光学拭镜纸
 </div>
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="轻奢闪购专场" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N11/M02/EA/D0/ChEwoFk3wb-ANLAVAABrmF6ZaeI86800.png" > </div>
+<img alt="山姆会员商店" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N08/M03/43/11/ChEi1lk0tMCAN2bnAABTdm9LjMI55600.png" > </div>
 </a>
 <a href="//cms.m.yhd.com/sale/eNEwYnpRnFm" class="column-pic pic-small">
 <div class="pic-head">
@@ -825,12 +978,12 @@ style="background-color:#f1f2f7" data-ref="">
 国产食品
 </h3>
 <div class="sub-tit purple-gradient">
-爆款美味
+满138减38
 </div>
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="国产食品" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N10/M09/9C/39/ChEi3FjItsSANwHzAACxSufAzE437200.png" > </div>
+<img alt="国产食品" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N10/M04/40/7C/ChEi3Fkv2a2Abk6AAACSdD3rXdQ27500.png" > </div>
 </a>
 <a title="酒水饮料" href="//cms.m.yhd.com/sale/IIiwSwwTTYS" class="column-pic pic-small"
 style="background-color:#f1f2f7" data-ref="" >
@@ -840,16 +993,16 @@ style="background-color:#f1f2f7" data-ref="" >
 酒水饮料
 </h3>
 <div class="sub-tit blue-gradient">
-饮品直降
+满99减30
 </div>
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="酒水饮料" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N09/M09/4E/7A/ChEi11jbFHmAbxKzAAB-MYhzFQY07000.png" > </div>
+<img alt="酒水饮料" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d6.yihaodianimg.com/N11/M0A/DF/AB/ChEwolkv-42AJPoRAABuizmgKZw68000.png" > </div>
 </a>
 </div>
 <div class="con-column con-column-3">
-<a href="//cms.m.yhd.com/sale/JmJciEuEuXJ" class="column-pic pic-small"
+<a href="//cms.m.yhd.com/sale/iipooUvAjIS" class="column-pic pic-small"
 style="background-color:#f6eff3" data-ref="">
 <div class="pic-head">
 <div class="head-con">
@@ -862,7 +1015,7 @@ style="background-color:#f6eff3" data-ref="">
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="进口食品" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N10/M07/4B/E2/ChEi21k5PNaAEarOAAB_aFzdbBo47000.png" > </div>
+<img alt="进口食品" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d8.yihaodianimg.com/N11/M07/84/26/ChEwolj55KyAQPLiAAB_aFzdbBo37800.png" > </div>
 </a>
 <a href="//cms.m.yhd.com/sale/otvqkqMMqfr" class="column-pic pic-small"
 style="background-color:#f1f2f7" data-ref="">
@@ -939,7 +1092,7 @@ style="background-color:#f1f2f7" data-ref="">
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="营养保健" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N11/M09/EF/5C/ChEwolk48QuARp4sAABooegwu2o07200.png" > </div>
+<img alt="营养保健" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d7.yihaodianimg.com/N11/M0A/EC/85/ChEwoVk47OmAeK3nAAB0tboTfc041800.png" > </div>
 </a>
 </div>
 <div class="con-column con-column-3">
@@ -951,12 +1104,12 @@ style="background-color:#ebf4f3" data-ref="">
 大小家电
 </h3>
 <div class="sub-tit">
-小狗吸尘器299
+SKG 榨汁机 139
 </div>
 </div>
 </div>
 <div class="pic-wrap">
-<img alt="大小家电" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N11/M03/E8/2A/ChEwoFk2V8iAcCqCAAB8ZQ80Tbc60200.png" > </div>
+<img alt="大小家电" class="lazyload" src="//image.yihaodianimg.com/front-homepage/global/images/blank.gif" original="//d9.yihaodianimg.com/N10/M09/46/86/ChEi21k2V2yAdyA4AADA8BE4zLM56700.png" > </div>
 </a>
 <a href="//cms.m.yhd.com/sale/OwDQyHcguOO" class="column-pic pic-small"
 style="background-color:#f6eff3" data-ref="">
@@ -1028,7 +1181,7 @@ style="background-color:#ebf4f3" data-ref="">
 箱包珠宝
 </h3>
 <div class="sub-tit">
-潮流眼镜88元抢
+兔子包38元包邮
 </div>
 </div>
 </div>
@@ -1106,7 +1259,7 @@ style="background-color:#ebf4f3" data-ref="">
 ,
 </span>
 <span style="color: #FFFFFF">1819751</span>
-<span style="color: #FFFFFF" id="span_server_time_tracker">20170609093032</span>
+<span style="color: #FFFFFF" id="span_server_time_tracker">20170608143439</span>
 </div><script type="text/javascript" src="//image.yihaodianimg.com/front-homepage/global/js/global_event_listen.js?1819751" charset="utf-8"></script>
 <!-- foot include start -->
 <script>

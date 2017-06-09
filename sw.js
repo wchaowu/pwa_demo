@@ -1,13 +1,9 @@
 'use strict';
 
-/**
- * Created by wuchaowu on 2016/06/08
- */
- 
 const version = '20170608';
 const __DEVELOPMENT__ = false;
 const __DEBUG__ = true;
-const offlineResources = ['index.js'];
+const offlineResources = ['index.html','index.js', 'styles/homepage2017.css',  'styles/fonts/index.woff'];
 
 const ignoreCache = [ 
 ];
@@ -221,7 +217,7 @@ function onActivate(event) {
 function onPush(event) {
     log('onPush ', event);
     sendNotify('Hi:', {
-        body: `【${new Date()}】发生了一次 Push 同步事件 1号店大促0元抢购~`
+        body: `【${new Date()}】发生了一次 Push 同步事件 ~`
     }, event);
 }
 
@@ -232,7 +228,7 @@ function onPush(event) {
 function onSync(event) {
     log('onSync', event);
     sendNotify('Hi:', {
-        body: `【${new Date()}】发生了一次 Sync 同步事件  1号店大促0元抢购 ~`
+        body: `【${new Date()}】发生了一次 Sync 同步事件 ~`
     }, event);
 }
 
