@@ -7,7 +7,7 @@
 const version = '20170608';
 const __DEVELOPMENT__ = false;
 const __DEBUG__ = true;
-const offlineResources = ['index.html','index.js', 'styles/homepage2017.css',  'styles/fonts/index.woff'];
+const offlineResources = ['index.js'];
 
 const ignoreCache = [ 
 ];
