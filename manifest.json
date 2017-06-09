@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "scope": "/pwa_demo",
+  "scope": "/pwa_demo/",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#3E4EB8",
