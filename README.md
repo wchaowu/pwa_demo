@@ -25,11 +25,13 @@ Progressive Web Apps（PWA，渐进式增强 WEB 应用），并且在其主要�
 2. 编写 Service Worker 脚本处理缓存, 更快读取缓存
 3. 服务端渲染, 用 App Shell 带来效果, 然后动态加载
 
-###当前demo
+### 当前demo
 
 [yhd_Demo](https://wchaowu.github.io/pwa_demo/)   
+
 [manifest.json](https://wchaowu.github.io/pwa_demo/manifest.json)
 
+[service_worker_main](https://wchaowu.github.io/pwa_demo/sw.js)
 
 ![yhd_pwa](images/yhd.png)   
 ![yhd_pwa](images/yhd2.png) 

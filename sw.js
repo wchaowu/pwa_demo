@@ -1,5 +1,7 @@
+/**
+ * Created by wuchaowu on 2016/06/08
+ */
 'use strict';
-
 const version = '20170608';
 const __DEVELOPMENT__ = false;
 const __DEBUG__ = true;
