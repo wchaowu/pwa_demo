@@ -3,12 +3,12 @@
 <html>
 <body>
     <script>
-        function openjd(){
+        function openjd(obj){
             
         
                  window.location.href = 'openApp.jdMobile://virtual?params={\"category\":\"jump\",\"des\":\"HomePage_Global\"}';
-       
-            return false;
+                obj.href ='openApp.jdMobile://virtual?params={\"category\":\"jump\",\"des\":\"HomePage_Global\"}';
+          //  return false;
         }
     </script>
 
@@ -41,7 +41,7 @@
 
 <p>openApp.jdMobile://virtual?params={"category":"jump","des":"HomePage_Global"}</p>
 <h1>
-    <a href="" onclick="openjd()">打开站APP</a>
+    <a href="" onclick="openjd(this)">打开站APP</a>
 </h1>
 <p>openApp.jdMobile://virtual?params={"category":"jump","des":"HomePage_Global"}</p>
 <h1>
