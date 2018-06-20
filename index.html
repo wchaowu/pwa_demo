@@ -2,6 +2,14 @@
 
 <html>
 <body>
+    <script>
+        function openjd(){
+            
+            setTimeout(function () {
+              window.location =  "openApp.jdMobile://virtual?params={"category":"jump","des":"HomePage_Global"}";
+            },300);
+        }
+    </script>
 
 <p>openapp.toplife://virtual?params={'des':'home','params':{'index':0}}</p>
 <h1>
@@ -32,7 +40,7 @@
 
 <p>openApp.jdMobile://virtual?params={"category":"jump","des":"HomePage_Global"}</p>
 <h1>
-    <a href="openApp.jdMobile://virtual?params={"category":"jump","des":"HomePage_Global"}">打开站APP</a>
+    <a href="" onclick="openjd()">打开站APP</a>
 </h1>
 
 </body>
